@@ -5,6 +5,7 @@ import {
   useContext,
   useState,
 } from "react";
+import ShoppingCart from "../components/ShoppingCart";
 
 interface ShoppingCartProvideProps {
   children: ReactNode;
@@ -103,6 +104,7 @@ export const ShoppingCartProvider = ({
       }}
     >
       {children}
+      <ShoppingCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };
