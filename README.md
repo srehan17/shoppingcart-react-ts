@@ -10,7 +10,7 @@
 
 ## Users can view the items in their cart and the corresponding payment amount.
 
-<img width="946" alt="Screen Shot 2023-06-06 at 10 39 42 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/b2bc7502-e057-47a8-9e35-e41647b83ddd">
+<img width="949" alt="Screen Shot 2023-06-06 at 10 34 44 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/17e747df-7239-46fb-8c31-cadde64ea575">
 
 
 
