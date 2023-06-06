@@ -2,6 +2,6 @@
 
 <img width="1250" alt="Screen Shot 2023-06-05 at 9 38 30 PM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/b670e244-991c-4f01-ba1e-e6313384ce06">
 
-<img width="1216" alt="Screen Shot 2023-06-05 at 9 36 00 PM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/825e8405-849d-4656-8ade-49dfc749c6e5">
+<img width="1262" alt="Screen Shot 2023-06-05 at 10 26 39 PM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/ced5de11-0da9-469d-ab0f-e56ca4c0267b">
 
-<img width="1258" alt="Screen Shot 2023-06-05 at 9 39 48 PM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/1faea6a5-797e-40fd-aab5-25c661302a8d">
+<img width="1224" alt="Screen Shot 2023-06-05 at 10 26 59 PM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/54d5f10d-8988-413f-8b87-edf849af9a82">
