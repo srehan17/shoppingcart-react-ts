@@ -12,7 +12,7 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
   return (
     <Offcanvas show={isOpen} placement="end" onHide={closeCart}>
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Cart</Offcanvas.Title>
+        <Offcanvas.Title>Your Cart</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>

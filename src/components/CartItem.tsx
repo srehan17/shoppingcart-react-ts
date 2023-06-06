@@ -15,13 +15,17 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
   if (item == null) return null;
 
   return (
-    <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
-      <Image
+    <Stack
+      direction="horizontal"
+      gap={2}
+      style={{ margin: "1rem 0" }}
+      className="d-flex align-items-center justify-content-between"
+    >
+      <img
         src={item.image}
         style={{
-          width: "125px",
-          height: "75px",
-          marginRight: "1rem",
+          width: "100px",
+          height: "auto",
           objectFit: "contain",
         }}
       />
@@ -38,7 +42,7 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
           {formatCurrency(item.price)}
         </div>
       </div>
-      <div>{formatCurrency(item.price * quantity)}</div>
+      <div>{formatCurrency(item.price * quantity)}&nbsp;</div>
       <Button
         variant="outline-danger"
         size="sm"
