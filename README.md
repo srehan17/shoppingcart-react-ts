@@ -1,5 +1,12 @@
 # Shopping Cart - React / TypeScript
 
+## SETUP
+
+1. Git clone repository
+2. Install dependencies: 'npm install'
+3. Deploy: 'npm run dev'
+4. Open browser to visit site
+
 ## Users can view items available in the store.
  
 <img width="940" alt="Screen Shot 2023-06-06 at 10 34 08 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/741132c1-63c9-41be-a2e7-455d1d252d25">
