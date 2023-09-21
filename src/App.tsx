@@ -12,12 +12,11 @@ const App = () => {
       <Navbar />
       <Container className="mb-4">
         <Routes>
-          <Route path="/mystore" element={<MyStore />} />
+          <Route path="/shoppingcart-react-ts" element={<MyStore />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
-      <MyStore />
     </ShoppingCartProvider>
   )
 }

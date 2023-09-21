@@ -9,7 +9,7 @@ const Navbar = () => {
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link to="/mystore" as={NavLink}>
+          <Nav.Link to="/shoppingcart-react-ts/" as={NavLink}>
             MyStore
           </Nav.Link>
           <Nav.Link to="/about" as={NavLink}>
@@ -19,6 +19,7 @@ const Navbar = () => {
             Contact
           </Nav.Link>
         </Nav>
+        <div style={{minHeight: "50px"}}>
         {cartQuantity > 0 && (
           <Button
             style={{ width: "3rem", height: "3rem", position: "relative" }}
@@ -49,6 +50,8 @@ const Navbar = () => {
             </div>
           </Button>
         )}
+        </div>
+        
       </Container>
     </NavbarBS>
   )

@@ -29,14 +29,14 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
       />
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline my-4 mh-100">
-          <span className="fs-5" style={{ marginRight: "10px" }}>
+          <span className="fs-10" style={{ marginRight: "10px" }}>
             {title}
           </span>
           <span className="ms-2 text-muted">{formatCurrency(price)}</span>
         </Card.Title>
-        <div className="mt-auto" style={{ minHeight: "100px"}}>
+        <div className="mt-auto" style={{ minHeight: "80px"}}>
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
+            <Button className="w-100 " onClick={() => increaseCartQuantity(id)}>
               + Add to Cart
             </Button>
           ) : (
@@ -55,9 +55,9 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
                 >
                   -
                 </Button>
-                <div>
+                <div style={{ minWidth: "100px"}} className="text-center">
                   <span className="fs-4 fw-bold">{quantity} </span>
-                  in cart
+                  
                 </div>
                 <Button
                   onClick={() => {
