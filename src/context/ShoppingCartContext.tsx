@@ -6,7 +6,7 @@ import {
   useEffect,
 } from "react";
 import ShoppingCart from "../components/ShoppingCart";
-import data from '../../data/data.json'
+// import data from '../../data/data.json'
 
 export interface Product {
   id: number;
