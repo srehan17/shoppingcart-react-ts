@@ -12,7 +12,7 @@ const App = () => {
       <Navbar />
       <Container className="mb-4">
         <Routes>
-          <Route path="/" element={<MyStore />} />
+          <Route path="/mystore" element={<MyStore />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

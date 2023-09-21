@@ -9,7 +9,7 @@ const Navbar = () => {
     <NavbarBS sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
-          <Nav.Link to="/" as={NavLink}>
+          <Nav.Link to="/mystore" as={NavLink}>
             MyStore
           </Nav.Link>
           <Nav.Link to="/about" as={NavLink}>
