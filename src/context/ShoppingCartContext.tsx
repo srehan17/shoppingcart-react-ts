@@ -6,6 +6,7 @@ import {
   useEffect,
 } from "react";
 import ShoppingCart from "../components/ShoppingCart";
+import data from '../../data/data.json'
 
 export interface Product {
   id: number;
@@ -50,15 +51,21 @@ export const ShoppingCartProvider = ({
 
   const [products, setProducts] = useState<Product[]>([]);
 
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-      })
-      .catch((error) => console.log("Error fetching products", error));
-  }, []);
+  // Using fetch for getting data from URL
+  // useEffect(() => {
+  //   fetch("https://fakestoreapi.com/products")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProducts(data);
+  //     })
+  //     .catch((error) => console.log("Error fetching products", error));
+  // }, []);
 
+  // Getting data from data.json file for deployment on Github pages
+  useEffect(() => {
+    setProducts(data);
+  },[])
+ 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
     0
