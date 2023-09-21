@@ -22,7 +22,6 @@ interface ShoppingCartProvideProps {
 export interface CartItem {
   id: number;
   quantity: number;
-  image: string;
 }
 
 interface ShoppingCartContext {
@@ -52,12 +51,12 @@ export const ShoppingCartProvider = ({
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    const fetchData = fetch("https://fakestoreapi.com/products")
+    fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
       })
-      .catch((error) => console.log("Error fetching products"));
+      .catch((error) => console.log("Error fetching products", error));
   }, []);
 
   const cartQuantity = cartItems.reduce(

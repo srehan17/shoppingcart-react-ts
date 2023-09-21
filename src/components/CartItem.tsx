@@ -1,4 +1,4 @@
-import { Stack, Image, Button } from "react-bootstrap";
+import { Stack, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 
