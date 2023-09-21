@@ -52,19 +52,19 @@ export const ShoppingCartProvider = ({
   const [products, setProducts] = useState<Product[]>([]);
 
   // Using fetch for getting data from URL
-  // useEffect(() => {
-  //   fetch("https://fakestoreapi.com/products")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setProducts(data);
-  //     })
-  //     .catch((error) => console.log("Error fetching products", error));
-  // }, []);
-
-  // Getting data from data.json file for deployment on Github pages
   useEffect(() => {
-    setProducts(data);
-  },[])
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
+      })
+      .catch((error) => console.log("Error fetching products", error));
+  }, []);
+
+  // Getting data from data.json file
+  // useEffect(() => {
+  //   setProducts(data);
+  // },[])
  
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
