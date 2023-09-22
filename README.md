@@ -1,4 +1,4 @@
-# Deployed on: https://srehan17.github.io/shoppingcart-react-ts/
+## Deployed on: https://srehan17.github.io/shoppingcart-react-ts/
 
 # Shopping Cart - React / TypeScript
 
