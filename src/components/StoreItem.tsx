@@ -36,7 +36,10 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
         </Card.Title>
         <div className="mt-auto" style={{ minHeight: "80px"}}>
           {quantity === 0 ? (
-            <Button className="w-100 " onClick={() => increaseCartQuantity(id)}>
+            <Button 
+              aria-label={`add product ${id} to cart`}
+              className="w-100 " 
+              onClick={() => increaseCartQuantity(id)}>
               + Add to Cart
             </Button>
           ) : (
@@ -49,6 +52,7 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
                 style={{ gap: "0.5rem" }}
               >
                 <Button
+                  aria-label={`decrease quantity for product ${id}`}
                   onClick={() => {
                     decreaseCartQuantity(id);
                   }}
@@ -60,6 +64,7 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
                   
                 </div>
                 <Button
+                  aria-label={`increase quantity for product ${id}`}
                   onClick={() => {
                     increaseCartQuantity(id);
                   }}

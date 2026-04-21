@@ -16,13 +16,29 @@ A responsive shopping cart application built with React and TypeScript that allo
 - React
 - TypeScript
 - CSS
+- Vitest
+- React Testing Library
 - GitHub Pages (deployment)
+
+## 🧪 Testing
+Implemented component tests using Vitest and React Testing Library to validate core user interactions and application behavior.
+
+### Covered scenarios:
+- Adding items to cart
+- Increasing and decreasing item quantity
+- Removing items from cart
+- Opening cart and verifying contents and total calculation
+
+Run tests locally:
+```bash
+npm run test
 
 ## 🧠 Key Concepts & Implementation
 - **State Management:** Managed cart state efficiently using React hooks
 - **Component Design:** Built reusable and modular UI components
 - **Type Safety:** Used TypeScript interfaces to ensure reliable data handling
 - **Performance:** Minimized unnecessary re-renders through proper state updates
+- **Testing:** Implemented unit and component tests to validate cart interactions and ensure UI reliability
 
 
 ## 📸 Screenshots
