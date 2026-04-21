@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />
+    <BrowserRouter basename="/shoppingcart-react-ts">
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
 )
