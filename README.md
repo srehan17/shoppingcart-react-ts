@@ -3,19 +3,22 @@
 🔗 Live Demo: https://srehan17.github.io/shoppingcart-react-ts/
 
 ## 📌 Overview
-A responsive shopping cart application built with React and TypeScript that allows users to browse products, add/remove items, and dynamically calculate totals. The project focuses on clean component design, state management, and type safety.
+A responsive shopping cart application built with React and TypeScript that allows users to browse products, manage cart items, and view real-time total calculations. 
+
+The project focuses on clean component design, state management, asynchronous data handling, and UI testing.
 
 ## ✨ Features
-- View available products
-- Add and remove items from cart
-- Dynamic cart total calculation
-- Responsive UI for different screen sizes
+- Browse products fetched from an external API
+- Add, remove, and update cart item quantities
+- Real-time cart total calculation
+- Loading state handling for API data
+- Responsive UI across screen sizes
 - Type-safe development using TypeScript
 
 ## 🛠 Tech Stack
 - React
 - TypeScript
-- CSS
+- React Bootstrap
 - Vitest
 - React Testing Library
 - GitHub Pages (deployment)
@@ -30,7 +33,9 @@ Implemented component tests using Vitest and React Testing Library to validate c
 - Opening cart and verifying contents and total calculation
 
 Run tests locally:
+```bash
 npm run test
+```
 
 ## 🧠 Key Concepts & Implementation
 - **State Management:** Managed cart state efficiently using React hooks

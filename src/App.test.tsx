@@ -5,16 +5,22 @@ import App from "./App";
 
 function renderApp() {
   return render(
-    <MemoryRouter initialEntries={["/shoppingcart-react-ts/"]}>
+    <MemoryRouter initialEntries={["/"]}>
       <App />
     </MemoryRouter>
   );
 }
 
-test("renders app heading", () => {
+test("shows loading state initially", () => {
   renderApp();
 
-  expect(screen.getByText(/my store/i)).toBeInTheDocument();
+  expect(screen.getByText(/loading products/i)).toBeInTheDocument();
+});
+
+test("renders app heading", async () => {
+  renderApp();
+
+  expect(await screen.findByRole("heading", { name: /my store/i })).toBeInTheDocument();
 });
 
 test("increases quantity when plus is clicked", async () => {
