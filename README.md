@@ -30,7 +30,6 @@ Implemented component tests using Vitest and React Testing Library to validate c
 - Opening cart and verifying contents and total calculation
 
 Run tests locally:
-```bash
 npm run test
 
 ## 🧠 Key Concepts & Implementation
