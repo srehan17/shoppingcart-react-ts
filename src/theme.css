@@ -1,0 +1,86 @@
+/* Dark Navy & Brass Theme */
+
+body {
+  background-color: #F8F9FA;
+  color: #2C2C2C;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.site-navbar {
+  background-color: #1B2A4A;
+}
+
+.site-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: #B8974A !important;
+}
+
+/* Primary buttons — gold with navy text */
+.btn-primary {
+  --bs-btn-bg: #B8974A;
+  --bs-btn-border-color: #B8974A;
+  --bs-btn-color: #1B2A4A;
+  --bs-btn-hover-bg: #9C7D3A;
+  --bs-btn-hover-border-color: #9C7D3A;
+  --bs-btn-hover-color: #1B2A4A;
+  --bs-btn-active-bg: #856832;
+  --bs-btn-active-border-color: #856832;
+  --bs-btn-active-color: #1B2A4A;
+  --bs-btn-focus-shadow-rgb: 184, 151, 74;
+}
+
+/* Outline primary buttons — gold border/text, fills gold on hover */
+.btn-outline-primary {
+  --bs-btn-color: #B8974A;
+  --bs-btn-border-color: #B8974A;
+  --bs-btn-hover-color: #1B2A4A;
+  --bs-btn-hover-bg: #B8974A;
+  --bs-btn-hover-border-color: #B8974A;
+  --bs-btn-active-color: #1B2A4A;
+  --bs-btn-active-bg: #B8974A;
+  --bs-btn-active-border-color: #B8974A;
+  --bs-btn-focus-shadow-rgb: 184, 151, 74;
+}
+
+/* Category filter pills */
+.nav-pills .nav-link.active {
+  background-color: #B8974A;
+  color: #1B2A4A;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link:not(.active) {
+  color: #1B2A4A;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+  color: #B8974A;
+}
+
+/* Text and links */
+.text-primary {
+  color: #B8974A !important;
+}
+
+a {
+  color: #1B2A4A;
+}
+
+a:hover {
+  color: #B8974A;
+}
+
+/* Cards — white to contrast the light grey body */
+.card {
+  background-color: #ffffff;
+  border-color: #e4e4e4;
+}

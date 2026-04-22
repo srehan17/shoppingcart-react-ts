@@ -1,22 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <h2 className="text-center mb-4">About Us</h2>
-      <h4>Our Story</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <h4>Our Mission</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <h4>Meet Our Team</h4>
+      <h2 className="text-center mb-4">{t("about.title")}</h2>
+      <h4>{t("about.storyTitle")}</h4>
+      <p>{t("about.storyText")}</p>
+      <h4>{t("about.missionTitle")}</h4>
+      <p>{t("about.missionText")}</p>
+      <h4>{t("about.teamTitle")}</h4>
+      <p>{t("about.teamText")}</p>
     </>
   )
 }

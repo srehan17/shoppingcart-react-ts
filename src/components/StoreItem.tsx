@@ -1,6 +1,8 @@
 import { Card, Button } from "react-bootstrap";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../hooks/useShoppingCart";
+import { useTranslation } from "react-i18next";
+import "./StoreItem.css";
 
 interface StoreItemProps {
   id: number;
@@ -16,10 +18,11 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart();
+  const { t, i18n } = useTranslation();
   const quantity = getItemQuantity(id);
 
   return (
-    <Card className="h-100">
+    <Card className="h-100 store-card">
       <Card.Img
         variant="top"
         src={image}
@@ -28,19 +31,26 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
         style={{ objectFit: "contain" }}
       />
       <Card.Body className="d-flex flex-column">
-        <Card.Title className="d-flex justify-content-between align-items-baseline my-4 mh-100">
-          <span className="fs-10" style={{ marginRight: "10px" }}>
+        <Card.Title className="my-4" style={{ minHeight: "4rem" }}>
+          <span
+            style={{
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+          >
             {title}
           </span>
-          <span className="ms-2 text-muted">{formatCurrency(price)}</span>
+          <span className="text-muted fs-6 fw-normal">{formatCurrency(price, i18n.language)}</span>
         </Card.Title>
-        <div className="mt-auto" style={{ minHeight: "80px"}}>
+        <div className="mt-auto d-flex flex-column justify-content-center" style={{ minHeight: "5rem" }}>
           {quantity === 0 ? (
-            <Button 
-              aria-label={`add product ${id} to cart`}
-              className="w-100 " 
+            <Button
+              aria-label={t("cart.addAriaLabel", { id })}
+              className="w-100"
               onClick={() => increaseCartQuantity(id)}>
-              + Add to Cart
+              {t("cart.addToCart")}
             </Button>
           ) : (
             <div
@@ -52,22 +62,17 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
                 style={{ gap: "0.5rem" }}
               >
                 <Button
-                  aria-label={`decrease quantity for product ${id}`}
-                  onClick={() => {
-                    decreaseCartQuantity(id);
-                  }}
+                  aria-label={t("cart.decreaseAriaLabel", { id })}
+                  onClick={() => decreaseCartQuantity(id)}
                 >
                   -
                 </Button>
                 <div style={{ minWidth: "100px"}} className="text-center">
                   <span className="fs-4 fw-bold">{quantity} </span>
-                  
                 </div>
                 <Button
-                  aria-label={`increase quantity for product ${id}`}
-                  onClick={() => {
-                    increaseCartQuantity(id);
-                  }}
+                  aria-label={t("cart.increaseAriaLabel", { id })}
+                  onClick={() => increaseCartQuantity(id)}
                 >
                   +
                 </Button>
@@ -75,11 +80,9 @@ const StoreItem = ({ id, title, price, image }: StoreItemProps) => {
               <Button
                 variant="danger"
                 size="sm"
-                onClick={() => {
-                  removeFromCart(id);
-                }}
+                onClick={() => removeFromCart(id)}
               >
-                Remove
+                {t("cart.remove")}
               </Button>
             </div>
           )}

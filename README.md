@@ -1,67 +1,107 @@
-# 🛒 Shopping Cart (React + TypeScript)
+# Shopping Cart — React + TypeScript
 
-🔗 Live Demo: https://srehan17.github.io/shoppingcart-react-ts/
+🔗 **Live Demo:** https://srehan17.github.io/shoppingcart-react-ts/
 
-## 📌 Overview
-A responsive shopping cart application built with React and TypeScript that allows users to browse products, manage cart items, and view real-time total calculations. 
+## Overview
 
-The project focuses on clean component design, state management, asynchronous data handling, and UI testing.
+A responsive, multilingual shopping cart application built with React and TypeScript. Users can browse products by category, manage cart items, and switch between English and French — with currency formatting and product titles adapting to the selected locale.
 
-## ✨ Features
-- Browse products fetched from an external API
-- Add, remove, and update cart item quantities
-- Real-time cart total calculation
-- Loading state handling for API data
-- Responsive UI across screen sizes
-- Type-safe development using TypeScript
+## Features
 
-## 🛠 Tech Stack
-- React
-- TypeScript
-- React Bootstrap
-- Vitest
-- React Testing Library
-- GitHub Pages (deployment)
+- Browse and filter products by category
+- Add, remove, and update cart item quantities with real-time total
+- Checkout panel with empty cart state
+- **Internationalization (EN/FR):** UI labels, product titles, and currency formatting all respond to the selected language
+- Dark navy + brass theme with custom typography
+- Scroll-to-top button on long pages
+- Responsive layout across screen sizes
+- Type-safe throughout with TypeScript
 
-## 🧪 Testing
-Implemented component tests using Vitest and React Testing Library to validate core user interactions and application behavior.
+## Tech Stack
 
-### Covered scenarios:
+| Layer | Technology |
+|---|---|
+| UI | React 18, React Bootstrap, Bootstrap 5 |
+| Language | TypeScript |
+| Routing | React Router v6 |
+| i18n | i18next, react-i18next |
+| Fonts | Playfair Display, Inter (Google Fonts) |
+| Testing | Vitest, React Testing Library |
+| Deployment | GitHub Pages |
+
+## Internationalization
+
+The app supports English and French, switchable via the language selector in the navbar. Three layers are translated:
+
+**1. UI strings** — all labels, buttons, and headings are managed through `src/i18n/locales/`:
+
+```
+src/i18n/
+  index.ts                  # i18next initialization
+  locales/
+    en/translation.json     # English strings
+    fr/translation.json     # French strings
+```
+
+**2. Product titles** — since the product API only returns English, bilingual titles are stored directly in `src/data/data.json`:
+
+```json
+{
+  "title": "Mens Cotton Jacket",
+  "titleFr": "Veste en coton pour homme"
+}
+```
+
+Components select the right field based on `i18n.language`.
+
+**3. Currency formatting** — uses the browser's built-in `Intl.NumberFormat`, passing the active locale so numbers render correctly per region (e.g. `$55.99` in English, `55,99 $US` in French):
+
+```ts
+new Intl.NumberFormat(locale, { currency: "USD", style: "currency" }).format(amount)
+```
+
+## Project Structure
+
+```
+src/
+  components/       # Navbar, StoreItem, CartItem, ShoppingCart, skeletons
+  context/          # ShoppingCartContext — cart state and product data
+  data/             # data.json — local product catalog with EN/FR titles
+  hooks/            # useShoppingCart
+  i18n/             # i18next setup and translation files
+  pages/            # MyStore, About, Contact
+  utilities/        # formatCurrency
+  theme.css         # Bootstrap overrides — navy/brass colour scheme
+```
+
+## Testing
+
+Component tests cover core cart interactions using Vitest and React Testing Library.
+
+**Covered scenarios:**
 - Adding items to cart
 - Increasing and decreasing item quantity
 - Removing items from cart
-- Opening cart and verifying contents and total calculation
+- Opening cart and verifying contents and total
 
-Run tests locally:
 ```bash
 npm run test
 ```
 
-## 🧠 Key Concepts & Implementation
-- **State Management:** Managed cart state efficiently using React hooks
-- **Component Design:** Built reusable and modular UI components
-- **Type Safety:** Used TypeScript interfaces to ensure reliable data handling
-- **Performance:** Minimized unnecessary re-renders through proper state updates
-- **Testing:** Implemented unit and component tests to validate cart interactions and ensure UI reliability
+## Getting Started
 
+```bash
+git clone https://github.com/srehan17/shoppingcart-react-ts.git
+cd shoppingcart-react-ts
+npm install
+npm run dev
+```
 
-## 📸 Screenshots
+Open [http://localhost:5173/shoppingcart-react-ts](http://localhost:5173/shoppingcart-react-ts) in your browser.
 
-### Product List
- 
-<img width="940" alt="Screen Shot 2023-06-06 at 10 34 08 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/741132c1-63c9-41be-a2e7-455d1d252d25">
+### Build for production
 
-### Cart Interaction
-
-<img width="946" alt="Screen Shot 2023-06-06 at 10 39 42 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/b3454a7d-de49-4d53-82c2-3e1dde97ca8a">
-
-### Total Calculation
-
-<img width="949" alt="Screen Shot 2023-06-06 at 10 34 44 AM" src="https://github.com/srehan17/shoppingCart-ReactTS/assets/28539842/17e747df-7239-46fb-8c31-cadde64ea575">
-
-## 🚀 Getting Started
-
-1. Git clone repository
-2. Install dependencies: 'npm install'
-3. Deploy: 'npm run dev'
-4. Open browser to visit site
+```bash
+npm run build
+npm run preview
+```

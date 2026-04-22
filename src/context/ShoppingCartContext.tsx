@@ -2,14 +2,17 @@ import {
   ReactNode,
   createContext,
   useState,
-  useEffect,
 } from "react";
 import ShoppingCart from "../components/ShoppingCart";
+import productsData from "../data/data.json";
 
 export interface Product {
   id: number;
   title: string;
+  titleFr?: string;
   description: string;
+  descriptionFr?: string;
+  category: string;
   image: string;
   price: number;
 }
@@ -43,20 +46,8 @@ export const ShoppingCartProvider = ({
 }: ShoppingCartProvideProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [products] = useState<Product[]>(productsData);
 
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-      })
-      .catch((error) => console.log("Error fetching products", error))
-      .finally(() => setLoading(false));
-  }, []);
- 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
     0
@@ -112,7 +103,7 @@ export const ShoppingCartProvider = ({
     <ShoppingCartContext.Provider
       value={{
         products,
-        loading,
+        loading: false,
         getItemQuantity,
         increaseCartQuantity,
         decreaseCartQuantity,

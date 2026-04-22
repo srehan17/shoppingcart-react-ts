@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "store": "MyStore",
+    "about": "About",
+    "contact": "Contact",
+    "openCart": "Open shopping cart"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "total": "Total",
+    "addToCart": "+ Add to Cart",
+    "remove": "Remove",
+    "addAriaLabel": "add product {{id}} to cart",
+    "decreaseAriaLabel": "decrease quantity for product {{id}}",
+    "increaseAriaLabel": "increase quantity for product {{id}}",
+    "checkout": "Checkout",
+    "empty": "Your cart is empty"
+  },
+  "store": {
+    "title": "My Store",
+    "loading": "Loading products...",
+    "noProducts": "No products available"
+  },
+  "categories": {
+    "all": "All",
+    "men's clothing": "Men's Clothing",
+    "women's clothing": "Women's Clothing",
+    "electronics": "Electronics",
+    "jewelery": "Jewellery"
+  },
+  "about": {
+    "title": "About Us",
+    "storyTitle": "Our Story",
+    "storyText": "We started this project to build a simple and modern shopping experience using React and TypeScript. The goal was to create a clean, responsive interface while exploring best practices in frontend development.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our mission is to deliver a fast, intuitive, and accessible shopping experience. We focus on usability, performance, and scalability, making it easy to extend the app with features like internationalization and dynamic product data.",
+    "teamTitle": "Meet Our Team",
+    "teamText": "This project was built by a passionate developer focused on learning and applying modern web technologies. It serves as both a learning platform and a foundation for building real-world applications."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "prompt": "Have feedback, questions, or ideas for improving the app?",
+    "cta": "Feel free to reach out — your input helps make this project better.",
+    "emailLabel": "Email me at"
+  }
+}
