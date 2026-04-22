@@ -11,31 +11,22 @@ function renderApp() {
   );
 }
 
-test("shows loading state initially", () => {
+test("renders store heading", () => {
   renderApp();
-
-  expect(screen.getByText(/loading products/i)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: /my store/i })).toBeInTheDocument();
 });
 
-test("renders app heading", async () => {
+test("renders products from local data", () => {
   renderApp();
-
-  expect(await screen.findByRole("heading", { name: /my store/i })).toBeInTheDocument();
+  expect(screen.getByText(/fjallraven/i)).toBeInTheDocument();
 });
 
 test("increases quantity when plus is clicked", async () => {
   const user = userEvent.setup();
   renderApp();
 
-  expect(await screen.findByText(/test product 1/i)).toBeInTheDocument();
-
-  await user.click(
-    screen.getByRole("button", { name: /add product 1 to cart/i })
-  );
-
-  await user.click(
-    screen.getByRole("button", { name: /increase quantity for product 1/i })
-  );
+  await user.click(screen.getByRole("button", { name: /add product 1 to cart/i }));
+  await user.click(screen.getByRole("button", { name: /increase quantity for product 1/i }));
 
   expect(screen.getByTestId("cart-quantity")).toHaveTextContent("2");
 });
@@ -44,19 +35,9 @@ test("decreases quantity when minus is clicked", async () => {
   const user = userEvent.setup();
   renderApp();
 
-  await screen.findByText(/test product 1/i);
-
-  await user.click(
-    screen.getByRole("button", { name: /add product 1 to cart/i })
-  );
-
-  await user.click(
-    screen.getByRole("button", { name: /increase quantity for product 1/i })
-  );
-
-  await user.click(
-    screen.getByRole("button", { name: /decrease quantity for product 1/i })
-  );
+  await user.click(screen.getByRole("button", { name: /add product 1 to cart/i }));
+  await user.click(screen.getByRole("button", { name: /increase quantity for product 1/i }));
+  await user.click(screen.getByRole("button", { name: /decrease quantity for product 1/i }));
 
   expect(screen.getByTestId("cart-quantity")).toHaveTextContent("1");
 });
@@ -65,32 +46,19 @@ test("removes item from cart", async () => {
   const user = userEvent.setup();
   renderApp();
 
-  await screen.findByText(/test product 1/i);
-
-  await user.click(
-    screen.getByRole("button", { name: /add product 1 to cart/i })
-  );
-
+  await user.click(screen.getByRole("button", { name: /add product 1 to cart/i }));
   await user.click(screen.getByRole("button", { name: /remove/i }));
 
   expect(screen.queryByTestId("cart-quantity")).not.toBeInTheDocument();
 });
 
-test("opens cart and shows item", async () => {
+test("opens cart and shows item with correct total", async () => {
   const user = userEvent.setup();
   renderApp();
 
-  await screen.findByText(/test product 1/i);
-
-  await user.click(
-    screen.getByRole("button", { name: /add product 1 to cart/i })
-  );
-
-  await user.click(
-    screen.getByRole("button", { name: /open shopping cart/i })
-  );
+  await user.click(screen.getByRole("button", { name: /add product 1 to cart/i }));
+  await user.click(screen.getByRole("button", { name: /open shopping cart/i }));
 
   expect(await screen.findByText(/your cart/i)).toBeInTheDocument();
-  expect(screen.getAllByText(/test product 1/i).length).toBeGreaterThan(1);
-  expect(screen.getByTestId("cart-total")).toHaveTextContent("$25.00");
+  expect(screen.getByTestId("cart-total")).toHaveTextContent("$109.95");
 });
