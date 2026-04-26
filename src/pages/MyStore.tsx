@@ -35,7 +35,7 @@ const MyStore = () => {
           <Nav.Item>
             <Nav.Link
               active={activeCategory === null}
-              onClick={() => setActiveCategory(null)}
+              onClick={() => { setActiveCategory(null); setSearchTerm("") }}
             >
               {t("categories.all")}
             </Nav.Link>
@@ -44,7 +44,7 @@ const MyStore = () => {
             <Nav.Item key={cat}>
               <Nav.Link
                 active={activeCategory === cat}
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => { setActiveCategory(cat); setSearchTerm("") }}
               >
                 {t(`categories.${cat}`)}
               </Nav.Link>
@@ -61,7 +61,9 @@ const MyStore = () => {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-center">{t("store.noProducts")}</p>
+        <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "40vh" }}>
+          <p className="text-muted fs-5">{t("store.noProducts")}</p>
+        </div>
       ) : (
         <Row md={2} xs={1} lg={3} className="g-3">
           {loading
