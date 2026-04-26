@@ -1,4 +1,4 @@
-import { Button, Container, Nav, Navbar as NavbarBS } from "react-bootstrap"
+import { Button, Container, Dropdown, Nav, Navbar as NavbarBS } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../hooks/useShoppingCart";
 import { useTranslation } from "react-i18next";
@@ -53,15 +53,16 @@ const Navbar = () => {
             {cartQuantity}
           </div>
         </Button>}
-        <select
-          value={i18n.language}
-          onChange={(e) => i18n.changeLanguage(e.target.value)}
-          className="form-select form-select-sm w-auto ms-3"
-          aria-label="Select language"
-        >
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-        </select>
+        <Dropdown align="end" className="ms-5 text-white">
+          <Dropdown.Toggle variant="outline-light" size="sm">
+            {{ en: "English (CA)", fr: "Français (CA)", es: "Español (ES)" }[i18n.language] ?? i18n.language}
+          </Dropdown.Toggle>
+          <Dropdown.Menu className="lang-menu">
+            <Dropdown.Item onClick={() => i18n.changeLanguage("en")}>English (CA)</Dropdown.Item>
+            <Dropdown.Item onClick={() => i18n.changeLanguage("fr")}>Français (CA)</Dropdown.Item>
+            <Dropdown.Item onClick={() => i18n.changeLanguage("es")}>Español (ES)</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Container>
     </NavbarBS>
   )

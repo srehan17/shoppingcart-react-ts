@@ -84,3 +84,12 @@ a:hover {
   background-color: #ffffff;
   border-color: #e4e4e4;
 }
+
+.lang-menu {
+  min-width: unset;
+  width: fit-content;
+}
+
+.lang-menu .dropdown-item {
+  padding: 4px 8px;
+}
