@@ -38,16 +38,16 @@
     "jewelery": "Bijoux"
   },
   "about": {
-    "title": "À propos de nous",
-    "storyTitle": "Notre histoire",
-    "storyText": "Nous avons démarré ce projet pour créer une expérience d'achat simple et moderne avec React et TypeScript. L'objectif était de concevoir une interface propre et réactive tout en explorant les meilleures pratiques du développement frontend.",
-    "missionTitle": "Notre mission",
-    "missionText": "Notre mission est de proposer une expérience d'achat rapide, intuitive et accessible. Nous nous concentrons sur la facilité d'utilisation, les performances et la scalabilité, en facilitant l'extension de l'application avec des fonctionnalités comme l'internationalisation et les données produit dynamiques.",
-    "teamTitle": "Notre équipe",
-    "teamText": "Ce projet a été réalisé par un développeur passionné, désireux d'apprendre et d'appliquer les technologies web modernes. Il sert à la fois de plateforme d'apprentissage et de base pour construire des applications réelles."
+    "title": "À propos",
+    "storyTitle": "Le projet",
+    "storyText": "MyStore est un panier d'achat complet développé avec React 18 et TypeScript. Il prend en charge trois langues (anglais, français et espagnol), conserve le panier entre les sessions grâce au localStorage, et inclut la recherche de produits, le tri et le filtrage par catégorie — le tout avec une barre de navigation responsive qui se replie sur mobile.",
+    "missionTitle": "Choix techniques",
+    "missionText": "Les traductions des produits utilisent une structure de locale imbriquée ({ en, fr, es }) plutôt que des champs plats, ce qui facilite l'ajout de nouvelles langues. Les chaînes d'interface utilisent i18next avec des règles de pluriel pour que les comptes d'articles soient naturels dans chaque locale. React.memo et useMemo minimisent les re-rendus lors du filtrage et du tri.",
+    "teamTitle": "Développé par",
+    "teamText": "Développé par Sarah Rehan — une développeuse frontend axée sur des applications web accessibles, bien testées et prêtes pour la production."
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Contact",
     "prompt": "Des commentaires, des questions ou des idées pour améliorer l'application ?",
     "cta": "N'hésitez pas à me contacter — votre avis m'aide à progresser.",
     "emailLabel": "Écrivez-moi à"

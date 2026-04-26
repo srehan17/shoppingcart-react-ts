@@ -17,6 +17,10 @@ const Navbar = () => {
           </svg>
         </NavbarBS.Brand>
 
+        <Nav.Link to="/" as={NavLink} className="fw-bold fs-5 d-lg-none ms-1">
+          {t("nav.store")}
+        </Nav.Link>
+
         <div className="d-flex align-items-center gap-2 ms-auto d-lg-none">
           {cartQuantity > 0 && (
             <Button
@@ -42,7 +46,7 @@ const Navbar = () => {
 
         <NavbarBS.Collapse id="main-nav">
           <Nav className="me-auto">
-            <Nav.Link to="/" as={NavLink} className="fw-bold fs-5">
+            <Nav.Link to="/" as={NavLink} className="fw-bold fs-5 d-none d-lg-block">
               {t("nav.store")}
             </Nav.Link>
             <Nav.Link to="/about" as={NavLink}>

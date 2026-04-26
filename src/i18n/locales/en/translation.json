@@ -38,16 +38,16 @@
     "jewelery": "Jewellery"
   },
   "about": {
-    "title": "About Us",
-    "storyTitle": "Our Story",
-    "storyText": "We started this project to build a simple and modern shopping experience using React and TypeScript. The goal was to create a clean, responsive interface while exploring best practices in frontend development.",
-    "missionTitle": "Our Mission",
-    "missionText": "Our mission is to deliver a fast, intuitive, and accessible shopping experience. We focus on usability, performance, and scalability, making it easy to extend the app with features like internationalization and dynamic product data.",
-    "teamTitle": "Meet Our Team",
-    "teamText": "This project was built by a passionate developer focused on learning and applying modern web technologies. It serves as both a learning platform and a foundation for building real-world applications."
+    "title": "About",
+    "storyTitle": "The Project",
+    "storyText": "MyStore is a full-featured shopping cart built with React 18 and TypeScript. It supports three languages (English, French, and Spanish), persists the cart across sessions using localStorage, and includes product search, sorting, and category filtering — all wired up with a responsive navbar that collapses on mobile.",
+    "missionTitle": "Technical Decisions",
+    "missionText": "Product translations use a nested locale structure ({ en, fr, es }) rather than flat fields, making it trivial to add new languages. UI strings use i18next with plural rules so item counts read naturally in every locale. React.memo and useMemo keep re-renders minimal as the product list filters and sorts.",
+    "teamTitle": "Built By",
+    "teamText": "Built by Sarah Rehan — a frontend developer focused on accessible, well-tested, and production-ready web applications."
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact",
     "prompt": "Have feedback, questions, or ideas for improving the app?",
     "cta": "Feel free to reach out — your input helps make this project better.",
     "emailLabel": "Email me at"

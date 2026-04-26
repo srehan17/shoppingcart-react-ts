@@ -15,7 +15,7 @@ function renderApp() {
 
 test("renders store heading", () => {
   renderApp();
-  expect(screen.getByRole("link", { name: /mystore/i })).toBeInTheDocument();
+  expect(screen.getAllByRole("link", { name: /mystore/i })[0]).toBeInTheDocument();
 });
 
 test("renders products from local data", () => {

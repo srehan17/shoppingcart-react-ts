@@ -38,16 +38,16 @@
     "jewelery": "Joyería"
   },
   "about": {
-    "title": "Sobre Nosotros",
-    "storyTitle": "Nuestra Historia",
-    "storyText": "Iniciamos este proyecto para crear una experiencia de compra simple y moderna usando React y TypeScript. El objetivo era diseñar una interfaz limpia y responsive explorando las mejores prácticas del desarrollo frontend.",
-    "missionTitle": "Nuestra Misión",
-    "missionText": "Nuestra misión es ofrecer una experiencia de compra rápida, intuitiva y accesible. Nos enfocamos en la usabilidad, el rendimiento y la escalabilidad, facilitando la extensión de la app con funcionalidades como la internacionalización y datos de productos dinámicos.",
-    "teamTitle": "Nuestro Equipo",
-    "teamText": "Este proyecto fue desarrollado por un desarrollador apasionado enfocado en aprender y aplicar tecnologías web modernas. Sirve tanto como plataforma de aprendizaje como base para construir aplicaciones del mundo real."
+    "title": "Acerca de",
+    "storyTitle": "El Proyecto",
+    "storyText": "MyStore es un carrito de compras completo desarrollado con React 18 y TypeScript. Admite tres idiomas (inglés, francés y español), persiste el carrito entre sesiones usando localStorage, e incluye búsqueda de productos, ordenación y filtrado por categoría — todo con una barra de navegación responsive que se colapsa en móvil.",
+    "missionTitle": "Decisiones Técnicas",
+    "missionText": "Las traducciones de productos usan una estructura de locale anidada ({ en, fr, es }) en lugar de campos planos, lo que facilita agregar nuevos idiomas. Las cadenas de interfaz usan i18next con reglas de plural para que los conteos de artículos sean naturales en cada locale. React.memo y useMemo minimizan los re-renderizados al filtrar y ordenar.",
+    "teamTitle": "Desarrollado por",
+    "teamText": "Desarrollado por Sarah Rehan — una desarrolladora frontend enfocada en aplicaciones web accesibles, bien probadas y listas para producción."
   },
   "contact": {
-    "title": "Contáctanos",
+    "title": "Contact",
     "prompt": "¿Tienes comentarios, preguntas o ideas para mejorar la app?",
     "cta": "No dudes en escribirnos — tu opinión ayuda a mejorar este proyecto.",
     "emailLabel": "Escríbeme a"
