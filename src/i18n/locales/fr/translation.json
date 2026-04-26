@@ -23,7 +23,12 @@
     "title": "Ma Boutique",
     "loading": "Chargement des produits...",
     "noProducts": "Aucun produit disponible",
-    "searchPlaceholder": "Rechercher des produits..."
+    "searchPlaceholder": "Rechercher des produits...",
+    "sortDefault": "Trier par",
+    "sortPriceLow": "Prix : croissant",
+    "sortPriceHigh": "Prix : décroissant",
+    "sortNameAZ": "Nom : A–Z",
+    "sortNameZA": "Nom : Z–A"
   },
   "categories": {
     "all": "Tout",

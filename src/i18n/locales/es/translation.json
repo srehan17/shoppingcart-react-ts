@@ -23,7 +23,12 @@
     "title": "Mi Tienda",
     "loading": "Cargando productos...",
     "noProducts": "No hay productos disponibles",
-    "searchPlaceholder": "Buscar productos..."
+    "searchPlaceholder": "Buscar productos...",
+    "sortDefault": "Ordenar por",
+    "sortPriceLow": "Precio: menor a mayor",
+    "sortPriceHigh": "Precio: mayor a menor",
+    "sortNameAZ": "Nombre: A–Z",
+    "sortNameZA": "Nombre: Z–A"
   },
   "categories": {
     "all": "Todo",

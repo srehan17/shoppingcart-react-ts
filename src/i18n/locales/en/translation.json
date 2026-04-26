@@ -23,7 +23,12 @@
     "title": "My Store",
     "loading": "Loading products...",
     "noProducts": "No products available",
-    "searchPlaceholder": "Search products..."
+    "searchPlaceholder": "Search products...",
+    "sortDefault": "Sort by",
+    "sortPriceLow": "Price: Low to High",
+    "sortPriceHigh": "Price: High to Low",
+    "sortNameAZ": "Name: A–Z",
+    "sortNameZA": "Name: Z–A"
   },
   "categories": {
     "all": "All",

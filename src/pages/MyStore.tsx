@@ -7,28 +7,38 @@ import { useTranslation } from "react-i18next"
 
 const CATEGORIES = ["men's clothing", "women's clothing", "electronics", "jewelery"] as const
 type Category = typeof CATEGORIES[number]
+type SortOption = "default" | "price-asc" | "price-desc" | "name-asc" | "name-desc"
 
 const MyStore = () => {
   const { products, loading } = useShoppingCart()
   const { t, i18n } = useTranslation()
   const [activeCategory, setActiveCategory] = useState<Category | null>(null)
   const [searchTerm, setSearchTerm] = useState("")
+  const [sortBy, setSortBy] = useState<SortOption>("default")
 
   const filtered = useMemo(() => {
     const lang = i18n.language as keyof (typeof products)[0]["title"]
-    return products.filter((p) => {
+
+    const result = products.filter((p) => {
       const matchesCategory = activeCategory ? p.category === activeCategory : true
       const localizedTitle = (p.title[lang] ?? p.title.en).toLowerCase()
-      const matchesSearch = localizedTitle.includes(searchTerm.toLowerCase())
-      return matchesCategory && matchesSearch
+      return matchesCategory && localizedTitle.includes(searchTerm.toLowerCase())
     })
-  }, [products, activeCategory, searchTerm, i18n.language])
+
+    switch (sortBy) {
+      case "price-asc":  return [...result].sort((a, b) => a.price - b.price)
+      case "price-desc": return [...result].sort((a, b) => b.price - a.price)
+      case "name-asc":   return [...result].sort((a, b) => (a.title[lang] ?? a.title.en).localeCompare(b.title[lang] ?? b.title.en))
+      case "name-desc":  return [...result].sort((a, b) => (b.title[lang] ?? b.title.en).localeCompare(a.title[lang] ?? a.title.en))
+      default:           return result
+    }
+  }, [products, activeCategory, searchTerm, sortBy, i18n.language])
 
   if (loading) return <p>{t("store.loading")}</p>
 
   return (
     <>
-<div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
+      <div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
         <Nav variant="pills" className="gap-1">
           <Nav.Item>
             <Nav.Link
@@ -49,13 +59,26 @@ const MyStore = () => {
             </Nav.Item>
           ))}
         </Nav>
-        <Form.Control
-          type="search"
-          placeholder={t("store.searchPlaceholder")}
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          style={{ maxWidth: "220px" }}
-        />
+        <div className="d-flex gap-2">
+          <Form.Control
+            type="search"
+            placeholder={t("store.searchPlaceholder")}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{ maxWidth: "200px" }}
+          />
+          <Form.Select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            style={{ maxWidth: "220px" }}
+          >
+            <option value="default">{t("store.sortDefault")}</option>
+            <option value="price-asc">{t("store.sortPriceLow")}</option>
+            <option value="price-desc">{t("store.sortPriceHigh")}</option>
+            <option value="name-asc">{t("store.sortNameAZ")}</option>
+            <option value="name-desc">{t("store.sortNameZA")}</option>
+          </Form.Select>
+        </div>
       </div>
 
       {filtered.length === 0 ? (
