@@ -58,7 +58,7 @@ const MyStore = () => {
                 <Col key={item.id}>
                   <StoreItem
                     {...item}
-                    title={i18n.language === "fr" ? (item.titleFr ?? item.title) : item.title}
+                    title={item.title[i18n.language as keyof typeof item.title] ?? item.title.en}
                   />
                 </Col>
               ))}

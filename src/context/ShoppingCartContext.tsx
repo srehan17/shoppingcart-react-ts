@@ -7,12 +7,16 @@ import {
 import ShoppingCart from "../components/ShoppingCart";
 import productsData from "../data/data.json";
 
+export interface LocalizedString {
+  en: string;
+  fr?: string;
+  es?: string;
+}
+
 export interface Product {
   id: number;
-  title: string;
-  titleFr?: string;
-  description: string;
-  descriptionFr?: string;
+  title: LocalizedString;
+  description: LocalizedString;
   category: string;
   image: string;
   price: number;

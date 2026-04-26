@@ -16,7 +16,7 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
 
   if (item == null) return null;
 
-  const title = i18n.language === "fr" ? (item.titleFr ?? item.title) : item.title;
+  const title = item.title[i18n.language as keyof typeof item.title] ?? item.title.en;
 
   return (
     <Stack

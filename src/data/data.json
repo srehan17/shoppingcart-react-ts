@@ -1,220 +1,340 @@
 [
   {
     "id": 1,
-    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-    "titleFr": "Fjallraven - Sac à dos Foldsack No. 1, pour ordinateurs jusqu'à 15 pouces",
+    "title": {
+      "en": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "fr": "Fjallraven - Sac à dos Foldsack No. 1, pour ordinateurs jusqu'à 15 pouces",
+      "es": "Fjallraven - Mochila Foldsack No. 1, para portátiles de hasta 15 pulgadas"
+    },
     "price": 109.95,
-    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    "descriptionFr": "Votre sac idéal pour un usage quotidien et les balades en forêt. Rangez votre ordinateur portable (jusqu'à 15 pouces) dans la poche rembourrée.",
+    "description": {
+      "en": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "fr": "Votre sac idéal pour un usage quotidien et les balades en forêt. Rangez votre ordinateur portable (jusqu'à 15 pouces) dans la poche rembourrée.",
+      "es": "Tu mochila perfecta para el uso diario y paseos por el bosque. Guarda tu portátil (hasta 15 pulgadas) en la funda acolchada."
+    },
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
     "rating": { "rate": 3.9, "count": 120 }
   },
   {
     "id": 2,
-    "title": "Mens Casual Premium Slim Fit T-Shirts ",
-    "titleFr": "T-shirt slim fit premium décontracté pour homme",
+    "title": {
+      "en": "Mens Casual Premium Slim Fit T-Shirts",
+      "fr": "T-shirt slim fit premium décontracté pour homme",
+      "es": "Camisetas slim fit premium casual para hombre"
+    },
     "price": 22.3,
-    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
-    "descriptionFr": "Style slim fit, manches longues raglan contrastées, col henley à trois boutons, tissu léger et doux pour un port confortable.",
+    "description": {
+      "en": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
+      "fr": "Style slim fit, manches longues raglan contrastées, col henley à trois boutons, tissu léger et doux pour un port confortable.",
+      "es": "Estilo slim fit, manga larga con contraste raglan, cuello henley de tres botones, tejido ligero y suave para un uso cómodo y transpirable."
+    },
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
     "rating": { "rate": 4.1, "count": 259 }
   },
   {
     "id": 3,
-    "title": "Mens Cotton Jacket",
-    "titleFr": "Veste en coton pour homme",
+    "title": {
+      "en": "Mens Cotton Jacket",
+      "fr": "Veste en coton pour homme",
+      "es": "Chaqueta de algodón para hombre"
+    },
     "price": 55.99,
-    "description": "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
-    "descriptionFr": "Veste d'extérieur idéale pour le printemps, l'automne et l'hiver. Adaptée à de nombreuses occasions : randonnée, camping, cyclisme ou voyages.",
+    "description": {
+      "en": "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "fr": "Veste d'extérieur idéale pour le printemps, l'automne et l'hiver. Adaptée à de nombreuses occasions : randonnée, camping, cyclisme ou voyages.",
+      "es": "Chaquetas de exterior ideales para primavera, otoño e invierno. Adecuadas para senderismo, acampada, ciclismo, viajes y otras actividades al aire libre."
+    },
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
     "rating": { "rate": 4.7, "count": 500 }
   },
   {
     "id": 4,
-    "title": "Mens Casual Slim Fit",
-    "titleFr": "Pantalon slim fit décontracté pour homme",
+    "title": {
+      "en": "Mens Casual Slim Fit",
+      "fr": "Pantalon slim fit décontracté pour homme",
+      "es": "Pantalón casual slim fit para hombre"
+    },
     "price": 15.99,
-    "description": "The color could be slightly different between on the screen and in practice. Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-    "descriptionFr": "La couleur peut légèrement différer entre l'écran et la réalité. Veuillez consulter le guide des tailles détaillé dans la description du produit.",
+    "description": {
+      "en": "The color could be slightly different between on the screen and in practice. Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "fr": "La couleur peut légèrement différer entre l'écran et la réalité. Veuillez consulter le guide des tailles détaillé dans la description du produit.",
+      "es": "El color puede variar ligeramente entre la pantalla y la realidad. Consulte la guía de tallas detallada en la descripción del producto."
+    },
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
     "rating": { "rate": 2.1, "count": 430 }
   },
   {
     "id": 5,
-    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-    "titleFr": "Bracelet chaîne dragon or et argent Legends Naga de John Hardy pour femme",
+    "title": {
+      "en": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "fr": "Bracelet chaîne dragon or et argent Legends Naga de John Hardy pour femme",
+      "es": "Pulsera cadena dragón oro y plata Legends Naga de John Hardy para mujer"
+    },
     "price": 695,
-    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    "descriptionFr": "De notre collection Legends, le Naga s'inspire du dragon aquatique mythique qui protège la perle des océans. Portez-le vers l'intérieur pour attirer amour et abondance, ou vers l'extérieur pour la protection.",
+    "description": {
+      "en": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "fr": "De notre collection Legends, le Naga s'inspire du dragon aquatique mythique qui protège la perle des océans. Portez-le vers l'intérieur pour attirer amour et abondance, ou vers l'extérieur pour la protection.",
+      "es": "De nuestra colección Legends, el Naga se inspira en el dragón acuático mítico que protege la perla del océano. Llévalo hacia dentro para atraer amor y abundancia, o hacia fuera para protección."
+    },
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
     "rating": { "rate": 4.6, "count": 400 }
   },
   {
     "id": 6,
-    "title": "Solid Gold Petite Micropave ",
-    "titleFr": "Bague micropavé en or massif",
+    "title": {
+      "en": "Solid Gold Petite Micropave",
+      "fr": "Bague micropavé en or massif",
+      "es": "Anillo micropavé en oro macizo"
+    },
     "price": 168,
-    "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.",
-    "descriptionFr": "Satisfaction garantie. Retour ou échange sous 30 jours. Conçu et vendu par Hafeez Center aux États-Unis.",
+    "description": {
+      "en": "Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.",
+      "fr": "Satisfaction garantie. Retour ou échange sous 30 jours. Conçu et vendu par Hafeez Center aux États-Unis.",
+      "es": "Satisfacción garantizada. Devolución o cambio en 30 días. Diseñado y vendido por Hafeez Center en Estados Unidos."
+    },
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
     "rating": { "rate": 3.9, "count": 70 }
   },
   {
     "id": 7,
-    "title": "White Gold Plated Princess",
-    "titleFr": "Bague princesse plaquée or blanc",
+    "title": {
+      "en": "White Gold Plated Princess",
+      "fr": "Bague princesse plaquée or blanc",
+      "es": "Anillo princesa bañado en oro blanco"
+    },
     "price": 9.99,
-    "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day.",
-    "descriptionFr": "Bague solitaire classique avec diamant simulé pour elle. Idéale pour les fiançailles, le mariage, l'anniversaire ou la Saint-Valentin.",
+    "description": {
+      "en": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day.",
+      "fr": "Bague solitaire classique avec diamant simulé pour elle. Idéale pour les fiançailles, le mariage, l'anniversaire ou la Saint-Valentin.",
+      "es": "Anillo solitario clásico con diamante creado para ella. Ideal para compromiso, boda, aniversario o San Valentín."
+    },
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
     "rating": { "rate": 3, "count": 400 }
   },
   {
     "id": 8,
-    "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-    "titleFr": "Boucles d'oreilles double tunnel en acier inoxydable plaqué or rose",
+    "title": {
+      "en": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "fr": "Boucles d'oreilles double tunnel en acier inoxydable plaqué or rose",
+      "es": "Pendientes dobles de acero inoxidable bañados en oro rosa"
+    },
     "price": 10.99,
-    "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel.",
-    "descriptionFr": "Boucles d'oreilles tunnel double évasées plaquées or rose. Fabriquées en acier inoxydable 316L.",
+    "description": {
+      "en": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel.",
+      "fr": "Boucles d'oreilles tunnel double évasées plaquées or rose. Fabriquées en acier inoxydable 316L.",
+      "es": "Pendientes túnel doble abocinados bañados en oro rosa. Fabricados en acero inoxidable 316L."
+    },
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_t.png",
     "rating": { "rate": 1.9, "count": 100 }
   },
   {
     "id": 9,
-    "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-    "titleFr": "Disque dur externe portable WD 2 To Elements - USB 3.0",
+    "title": {
+      "en": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
+      "fr": "Disque dur externe portable WD 2 To Elements - USB 3.0",
+      "es": "Disco duro externo portátil WD 2TB Elements - USB 3.0"
+    },
     "price": 64,
-    "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7.",
-    "descriptionFr": "Compatible USB 3.0 et USB 2.0. Transferts de données rapides. Améliore les performances du PC. Grande capacité. Formaté NTFS pour Windows.",
+    "description": {
+      "en": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7.",
+      "fr": "Compatible USB 3.0 et USB 2.0. Transferts de données rapides. Améliore les performances du PC. Grande capacité. Formaté NTFS pour Windows.",
+      "es": "Compatible con USB 3.0 y USB 2.0. Transferencias de datos rápidas. Mejora el rendimiento del PC. Alta capacidad. Formateado NTFS para Windows."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_t.png",
     "rating": { "rate": 3.3, "count": 203 }
   },
   {
     "id": 10,
-    "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-    "titleFr": "SSD interne SanDisk SSD PLUS 1 To - SATA III 6 Gb/s",
+    "title": {
+      "en": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "fr": "SSD interne SanDisk SSD PLUS 1 To - SATA III 6 Gb/s",
+      "es": "SSD interno SanDisk SSD PLUS 1TB - SATA III 6 Gb/s"
+    },
     "price": 109,
-    "description": "Easy upgrade for faster boot up, shutdown, application load and response. Boosts burst write performance, making it ideal for typical PC workloads.",
-    "descriptionFr": "Mise à niveau facile pour un démarrage et un chargement des applications plus rapides. Performances de lecture/écriture jusqu'à 535 Mo/s.",
+    "description": {
+      "en": "Easy upgrade for faster boot up, shutdown, application load and response. Boosts burst write performance, making it ideal for typical PC workloads.",
+      "fr": "Mise à niveau facile pour un démarrage et un chargement des applications plus rapides. Performances de lecture/écriture jusqu'à 535 Mo/s.",
+      "es": "Actualización fácil para un arranque, apagado y carga de aplicaciones más rápidos. Mejora el rendimiento de escritura en ráfaga."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_t.png",
     "rating": { "rate": 2.9, "count": 470 }
   },
   {
     "id": 11,
-    "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-    "titleFr": "SSD Silicon Power 256 Go 3D NAND A55 SATA III 2,5 pouces",
+    "title": {
+      "en": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "fr": "SSD Silicon Power 256 Go 3D NAND A55 SATA III 2,5 pouces",
+      "es": "SSD Silicon Power 256GB 3D NAND A55 SATA III 2.5"
+    },
     "price": 109,
-    "description": "3D NAND flash are applied to deliver high transfer speeds. The advanced SLC Cache Technology allows performance boost and longer lifespan.",
-    "descriptionFr": "La mémoire flash 3D NAND offre des vitesses de transfert élevées. La technologie SLC Cache avancée améliore les performances et prolonge la durée de vie.",
+    "description": {
+      "en": "3D NAND flash are applied to deliver high transfer speeds. The advanced SLC Cache Technology allows performance boost and longer lifespan.",
+      "fr": "La mémoire flash 3D NAND offre des vitesses de transfert élevées. La technologie SLC Cache avancée améliore les performances et prolonge la durée de vie.",
+      "es": "La memoria flash 3D NAND ofrece altas velocidades de transferencia. La tecnología avanzada SLC Cache mejora el rendimiento y prolonga la vida útil."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_t.png",
     "rating": { "rate": 4.8, "count": 319 }
   },
   {
     "id": 12,
-    "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-    "titleFr": "Disque dur externe portable WD 4 To Gaming Drive pour PlayStation 4",
+    "title": {
+      "en": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "fr": "Disque dur externe portable WD 4 To Gaming Drive pour PlayStation 4",
+      "es": "Disco duro externo portátil WD 4TB Gaming Drive para PlayStation 4"
+    },
     "price": 114,
-    "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty.",
-    "descriptionFr": "Étendez votre expérience de jeu PS4. Installation rapide et facile. Design élégant avec grande capacité. Garantie fabricant 3 ans.",
+    "description": {
+      "en": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty.",
+      "fr": "Étendez votre expérience de jeu PS4. Installation rapide et facile. Design élégant avec grande capacité. Garantie fabricant 3 ans.",
+      "es": "Amplía tu experiencia de juego en PS4. Instalación rápida y sencilla. Diseño elegante con gran capacidad. Garantía limitada del fabricante de 3 años."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_t.png",
     "rating": { "rate": 4.8, "count": 400 }
   },
   {
     "id": 13,
-    "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-    "titleFr": "Moniteur Acer SB220Q bi 21,5 pouces Full HD (1920 x 1080) IPS ultra-fin",
+    "title": {
+      "en": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "fr": "Moniteur Acer SB220Q bi 21,5 pouces Full HD (1920 x 1080) IPS ultra-fin",
+      "es": "Monitor Acer SB220Q bi 21.5 pulgadas Full HD (1920 x 1080) IPS ultradelgado"
+    },
     "price": 599,
-    "description": "21.5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz.",
-    "descriptionFr": "Écran IPS Full HD 21,5 pouces (1920 x 1080). Technologie Radeon FreeSync. Taux de rafraîchissement 75 Hz. Design ultra-fin sans bordure.",
+    "description": {
+      "en": "21.5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz.",
+      "fr": "Écran IPS Full HD 21,5 pouces (1920 x 1080). Technologie Radeon FreeSync. Taux de rafraîchissement 75 Hz. Design ultra-fin sans bordure.",
+      "es": "Pantalla IPS Full HD 21.5 pulgadas (1920 x 1080). Tecnología Radeon FreeSync. Sin compatibilidad con montaje VESA. Tasa de refresco: 75 Hz."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_t.png",
     "rating": { "rate": 2.9, "count": 250 }
   },
   {
     "id": 14,
-    "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-    "titleFr": "Moniteur gaming incurvé Samsung 49 pouces CHG90 144 Hz - Super Ultrawide QLED",
+    "title": {
+      "en": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED",
+      "fr": "Moniteur gaming incurvé Samsung 49 pouces CHG90 144 Hz - Super Ultrawide QLED",
+      "es": "Monitor gaming curvo Samsung 49 pulgadas CHG90 144 Hz - Super Ultrawide QLED"
+    },
     "price": 999.99,
-    "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support. 144HZ HIGH REFRESH RATE and 1ms ultra fast response time.",
-    "descriptionFr": "Moniteur gaming incurvé Super Ultrawide 49 pouces 32:9. Technologie QLED, support HDR. Taux de rafraîchissement 144 Hz, temps de réponse 1 ms.",
+    "description": {
+      "en": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support. 144HZ HIGH REFRESH RATE and 1ms ultra fast response time.",
+      "fr": "Moniteur gaming incurvé Super Ultrawide 49 pouces 32:9. Technologie QLED, support HDR. Taux de rafraîchissement 144 Hz, temps de réponse 1 ms.",
+      "es": "Monitor gaming curvo Super Ultrawide 49 pulgadas 32:9. Tecnología QLED, soporte HDR. Tasa de refresco 144 Hz, tiempo de respuesta 1 ms."
+    },
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_t.png",
     "rating": { "rate": 2.2, "count": 140 }
   },
   {
     "id": 15,
-    "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-    "titleFr": "Veste de snowboard 3 en 1 BIYLACLESEN pour femme",
+    "title": {
+      "en": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "fr": "Veste de snowboard 3 en 1 BIYLACLESEN pour femme",
+      "es": "Chaqueta de snowboard 3 en 1 BIYLACLESEN para mujer"
+    },
     "price": 56.99,
-    "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece.",
-    "descriptionFr": "Taille standard US. Matière : 100% polyester. Doublure polaire détachable. Col montant, poches zippées. Capuche et poignets ajustables.",
+    "description": {
+      "en": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece.",
+      "fr": "Taille standard US. Matière : 100% polyester. Doublure polaire détachable. Col montant, poches zippées. Capuche et poignets ajustables.",
+      "es": "Talla estándar de EE.UU. Material: 100% poliéster. Forro polar extraíble. Cuello alto, bolsillos con cremallera. Capucha y puños ajustables."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
     "rating": { "rate": 2.6, "count": 235 }
   },
   {
     "id": 16,
-    "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-    "titleFr": "Veste biker en simili cuir à capuche amovible Lock and Love pour femme",
+    "title": {
+      "en": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "fr": "Veste biker en simili cuir à capuche amovible Lock and Love pour femme",
+      "es": "Chaqueta biker de cuero sintético con capucha extraíble Lock and Love para mujer"
+    },
     "price": 29.95,
-    "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front.",
-    "descriptionFr": "Coque : 100% polyuréthane. Doublure : 100% polyester. Simili cuir pour le style et le confort. 2 poches avant. Lavage à la main uniquement.",
+    "description": {
+      "en": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front.",
+      "fr": "Coque : 100% polyuréthane. Doublure : 100% polyester. Simili cuir pour le style et le confort. 2 poches avant. Lavage à la main uniquement.",
+      "es": "100% poliuretano (exterior), 100% poliéster (forro). Cuero sintético para estilo y confort. 2 bolsillos delanteros. Solo lavado a mano."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_t.png",
     "rating": { "rate": 2.9, "count": 340 }
   },
   {
     "id": 17,
-    "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-    "titleFr": "Coupe-vent imperméable rayé pour femme",
+    "title": {
+      "en": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "fr": "Coupe-vent imperméable rayé pour femme",
+      "es": "Chubasquero cortavientos a rayas para mujer"
+    },
     "price": 39.99,
-    "description": "Lightweight perfect for trip or casual wear. Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat.",
-    "descriptionFr": "Légère, parfaite pour les voyages ou un usage décontracté. Manches longues avec capuche et cordon ajustable. Fermeture boutonnée et zippée.",
+    "description": {
+      "en": "Lightweight perfect for trip or casual wear. Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat.",
+      "fr": "Légère, parfaite pour les voyages ou un usage décontracté. Manches longues avec capuche et cordon ajustable. Fermeture boutonnée et zippée.",
+      "es": "Ligero, perfecto para viajes o uso casual. Manga larga con capucha y cintura ajustable con cordón. Cierre con botones y cremallera."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
     "rating": { "rate": 3.8, "count": 679 }
   },
   {
     "id": 18,
-    "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
-    "titleFr": "T-shirt manches courtes col bateau MBJ pour femme",
+    "title": {
+      "en": "MBJ Women's Solid Short Sleeve Boat Neck V",
+      "fr": "T-shirt manches courtes col bateau MBJ pour femme",
+      "es": "Camiseta de manga corta con cuello barco MBJ para mujer"
+    },
     "price": 9.85,
-    "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort.",
-    "descriptionFr": "95% rayonne, 5% élasthanne. Fabriqué aux États-Unis ou importé. Tissu léger avec un bel élasticité pour le confort.",
+    "description": {
+      "en": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort.",
+      "fr": "95% rayonne, 5% élasthanne. Fabriqué aux États-Unis ou importé. Tissu léger avec un bel élasticité pour le confort.",
+      "es": "95% rayón, 5% elastano. Fabricado en EE.UU. o importado. Tejido ligero con buena elasticidad para mayor comodidad."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png",
     "rating": { "rate": 4.7, "count": 130 }
   },
   {
     "id": 19,
-    "title": "Opna Women's Short Sleeve Moisture",
-    "titleFr": "T-shirt respirant manches courtes Opna pour femme",
+    "title": {
+      "en": "Opna Women's Short Sleeve Moisture",
+      "fr": "T-shirt respirant manches courtes Opna pour femme",
+      "es": "Camiseta transpirable de manga corta Opna para mujer"
+    },
     "price": 7.95,
-    "description": "100% Polyester, Machine wash, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away.",
-    "descriptionFr": "100% polyester. Lavable en machine. Tissu léger, ample et très respirant avec des propriétés évacuant l'humidité.",
+    "description": {
+      "en": "100% Polyester, Machine wash, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away.",
+      "fr": "100% polyester. Lavable en machine. Tissu léger, ample et très respirant avec des propriétés évacuant l'humidité.",
+      "es": "100% poliéster. Lavable a máquina. Tejido ligero, amplio y muy transpirable con propiedades de absorción de humedad."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png",
     "rating": { "rate": 4.5, "count": 146 }
   },
   {
     "id": 20,
-    "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-    "titleFr": "T-shirt en coton décontracté DANVOUY pour femme",
+    "title": {
+      "en": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "fr": "T-shirt en coton décontracté DANVOUY pour femme",
+      "es": "Camiseta casual de algodón de manga corta DANVOUY para mujer"
+    },
     "price": 12.99,
-    "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch.",
-    "descriptionFr": "95% coton, 5% élasthanne. T-shirt décontracté à manches courtes avec imprimé lettre et col en V. Tissu doux avec un peu d'élasticité.",
+    "description": {
+      "en": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch.",
+      "fr": "95% coton, 5% élasthanne. T-shirt décontracté à manches courtes avec imprimé lettre et col en V. Tissu doux avec un peu d'élasticité.",
+      "es": "95% algodón, 5% elastano. Camiseta casual de manga corta con estampado de letras y cuello en V. Tejido suave con algo de elasticidad."
+    },
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
     "rating": { "rate": 3.6, "count": 145 }
