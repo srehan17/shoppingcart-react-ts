@@ -38,8 +38,8 @@ const MyStore = () => {
 
   return (
     <>
-      <div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
-        <Nav variant="pills" className="gap-1">
+      <div className="d-flex align-items-center justify-content-center justify-content-lg-between mb-4 gap-3 flex-wrap">
+        <Nav variant="pills" className="gap-1 flex-nowrap overflow-auto">
           <Nav.Item>
             <Nav.Link
               active={activeCategory === null}
