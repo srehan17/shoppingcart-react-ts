@@ -10,8 +10,14 @@ const Navbar = () => {
   return (
     <NavbarBS sticky="top" className="site-navbar shadow-sm mb-3">
       <Container>
+        <NavbarBS.Brand as={NavLink} to="/" className="me-3">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="4" fill="white" fillOpacity="0.15"/>
+            <path d="M3 3h2l3 12h10l3-8H6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </NavbarBS.Brand>
         <Nav className="me-auto">
-          <Nav.Link to="/" as={NavLink}>
+          <Nav.Link to="/" as={NavLink} className="fw-bold fs-5">
             {t("nav.store")}
           </Nav.Link>
           <Nav.Link to="/about" as={NavLink}>

@@ -28,9 +28,7 @@ const MyStore = () => {
 
   return (
     <>
-      <h2 className="text-center mb-3">{t("store.title")}</h2>
-
-      <div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
+<div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
         <Nav variant="pills" className="gap-1">
           <Nav.Item>
             <Nav.Link
