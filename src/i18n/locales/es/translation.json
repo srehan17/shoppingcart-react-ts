@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "store": "Mi Tienda",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "openCart_one": "Abrir carrito, {{count}} artículo",
+    "openCart_other": "Abrir carrito, {{count}} artículos"
+  },
+  "cart": {
+    "title": "Tu Carrito",
+    "total": "Total",
+    "addToCart": "+ Añadir al carrito",
+    "remove": "Eliminar",
+    "addAriaLabel": "añadir producto {{id}} al carrito",
+    "decreaseAriaLabel": "reducir cantidad del producto {{id}}",
+    "increaseAriaLabel": "aumentar cantidad del producto {{id}}",
+    "checkout": "Finalizar compra",
+    "empty": "Tu carrito está vacío",
+    "itemCount_one": "{{count}} artículo",
+    "itemCount_other": "{{count}} artículos"
+  },
+  "store": {
+    "title": "Mi Tienda",
+    "loading": "Cargando productos...",
+    "noProducts": "No hay productos disponibles"
+  },
+  "categories": {
+    "all": "Todo",
+    "men's clothing": "Ropa de Hombre",
+    "women's clothing": "Ropa de Mujer",
+    "electronics": "Electrónica",
+    "jewelery": "Joyería"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "storyTitle": "Nuestra Historia",
+    "storyText": "Iniciamos este proyecto para crear una experiencia de compra simple y moderna usando React y TypeScript. El objetivo era diseñar una interfaz limpia y responsive explorando las mejores prácticas del desarrollo frontend.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Nuestra misión es ofrecer una experiencia de compra rápida, intuitiva y accesible. Nos enfocamos en la usabilidad, el rendimiento y la escalabilidad, facilitando la extensión de la app con funcionalidades como la internacionalización y datos de productos dinámicos.",
+    "teamTitle": "Nuestro Equipo",
+    "teamText": "Este proyecto fue desarrollado por un desarrollador apasionado enfocado en aprender y aplicar tecnologías web modernas. Sirve tanto como plataforma de aprendizaje como base para construir aplicaciones del mundo real."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "prompt": "¿Tienes comentarios, preguntas o ideas para mejorar la app?",
+    "cta": "No dudes en escribirnos — tu opinión ayuda a mejorar este proyecto.",
+    "emailLabel": "Escríbeme a"
+  }
+}
