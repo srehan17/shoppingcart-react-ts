@@ -1,6 +1,10 @@
 import "@testing-library/jest-dom";
-import { vi } from "vitest";
+import { vi, beforeEach } from "vitest";
 import "../i18n";
+
+beforeEach(() => {
+  localStorage.clear();
+});
 
 Object.defineProperty(window, "matchMedia", {
   writable: true,
