@@ -22,7 +22,7 @@ const Navbar = () => {
           </Nav.Link>
         </Nav>
         {cartQuantity > 0 && <Button
-          aria-label={t("nav.openCart")}
+          aria-label={t("nav.openCart", { count: cartQuantity })}
           style={{ width: "2.2rem", height: "2.2rem", position: "relative" }}
           variant="outline-primary"
           className="rounded-circle"

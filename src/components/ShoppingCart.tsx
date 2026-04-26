@@ -9,7 +9,7 @@ interface ShoppingCartProps {
 }
 
 const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
-  const { closeCart, cartItems, products } = useShoppingCart();
+  const { closeCart, cartItems, cartQuantity, products } = useShoppingCart();
   const { t, i18n } = useTranslation();
 
   const total = cartItems.reduce((sum, cartItem) => {
@@ -20,7 +20,9 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
   return (
     <Offcanvas show={isOpen} placement="end" onHide={closeCart}>
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>{t("cart.title")}</Offcanvas.Title>
+        <Offcanvas.Title>
+          {t("cart.title")}{cartQuantity > 0 ? ` (${t("cart.itemCount", { count: cartQuantity })})` : ""}
+        </Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body className="d-flex flex-column">
         {cartItems.length === 0 ? (

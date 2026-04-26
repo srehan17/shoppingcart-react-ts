@@ -3,7 +3,8 @@
     "store": "MyStore",
     "about": "About",
     "contact": "Contact",
-    "openCart": "Open shopping cart"
+    "openCart_one": "Open cart, {{count}} item",
+    "openCart_other": "Open cart, {{count}} items"
   },
   "cart": {
     "title": "Your Cart",
@@ -14,7 +15,9 @@
     "decreaseAriaLabel": "decrease quantity for product {{id}}",
     "increaseAriaLabel": "increase quantity for product {{id}}",
     "checkout": "Checkout",
-    "empty": "Your cart is empty"
+    "empty": "Your cart is empty",
+    "itemCount_one": "{{count}} item",
+    "itemCount_other": "{{count}} items"
   },
   "store": {
     "title": "My Store",

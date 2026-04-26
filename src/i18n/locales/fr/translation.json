@@ -3,7 +3,8 @@
     "store": "Ma Boutique",
     "about": "À propos",
     "contact": "Contact",
-    "openCart": "Ouvrir le panier"
+    "openCart_one": "Ouvrir le panier, {{count}} article",
+    "openCart_other": "Ouvrir le panier, {{count}} articles"
   },
   "cart": {
     "title": "Votre panier",
@@ -14,7 +15,9 @@
     "decreaseAriaLabel": "diminuer la quantité pour le produit {{id}}",
     "increaseAriaLabel": "augmenter la quantité pour le produit {{id}}",
     "checkout": "Passer la commande",
-    "empty": "Votre panier est vide"
+    "empty": "Votre panier est vide",
+    "itemCount_one": "{{count}} article",
+    "itemCount_other": "{{count}} articles"
   },
   "store": {
     "title": "Ma Boutique",
