@@ -22,7 +22,8 @@
   "store": {
     "title": "Ma Boutique",
     "loading": "Chargement des produits...",
-    "noProducts": "Aucun produit disponible"
+    "noProducts": "Aucun produit disponible",
+    "searchPlaceholder": "Rechercher des produits..."
   },
   "categories": {
     "all": "Tout",

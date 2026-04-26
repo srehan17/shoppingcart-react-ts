@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { Row, Col, Nav } from "react-bootstrap"
+import { useMemo, useState } from "react"
+import { Row, Col, Nav, Form } from "react-bootstrap"
 import StoreItem from "../components/StoreItem"
 import { useShoppingCart } from "../hooks/useShoppingCart"
 import StoreItemSkeleton from "../components/StoreItemSkeleton"
@@ -12,10 +12,17 @@ const MyStore = () => {
   const { products, loading } = useShoppingCart()
   const { t, i18n } = useTranslation()
   const [activeCategory, setActiveCategory] = useState<Category | null>(null)
+  const [searchTerm, setSearchTerm] = useState("")
 
-  const filtered = activeCategory
-    ? products.filter((p) => p.category === activeCategory)
-    : products
+  const filtered = useMemo(() => {
+    const lang = i18n.language as keyof (typeof products)[0]["title"]
+    return products.filter((p) => {
+      const matchesCategory = activeCategory ? p.category === activeCategory : true
+      const localizedTitle = (p.title[lang] ?? p.title.en).toLowerCase()
+      const matchesSearch = localizedTitle.includes(searchTerm.toLowerCase())
+      return matchesCategory && matchesSearch
+    })
+  }, [products, activeCategory, searchTerm, i18n.language])
 
   if (loading) return <p>{t("store.loading")}</p>
 
@@ -23,26 +30,35 @@ const MyStore = () => {
     <>
       <h2 className="text-center mb-3">{t("store.title")}</h2>
 
-      <Nav variant="pills" className="justify-content-center mb-4 gap-1">
-        <Nav.Item>
-          <Nav.Link
-            active={activeCategory === null}
-            onClick={() => setActiveCategory(null)}
-          >
-            {t("categories.all")}
-          </Nav.Link>
-        </Nav.Item>
-        {CATEGORIES.map((cat) => (
-          <Nav.Item key={cat}>
+      <div className="d-flex align-items-center justify-content-between mb-4 gap-3 flex-wrap">
+        <Nav variant="pills" className="gap-1">
+          <Nav.Item>
             <Nav.Link
-              active={activeCategory === cat}
-              onClick={() => setActiveCategory(cat)}
+              active={activeCategory === null}
+              onClick={() => setActiveCategory(null)}
             >
-              {t(`categories.${cat}`)}
+              {t("categories.all")}
             </Nav.Link>
           </Nav.Item>
-        ))}
-      </Nav>
+          {CATEGORIES.map((cat) => (
+            <Nav.Item key={cat}>
+              <Nav.Link
+                active={activeCategory === cat}
+                onClick={() => setActiveCategory(cat)}
+              >
+                {t(`categories.${cat}`)}
+              </Nav.Link>
+            </Nav.Item>
+          ))}
+        </Nav>
+        <Form.Control
+          type="search"
+          placeholder={t("store.searchPlaceholder")}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          style={{ maxWidth: "220px" }}
+        />
+      </div>
 
       {filtered.length === 0 ? (
         <p className="text-center">{t("store.noProducts")}</p>

@@ -22,7 +22,8 @@
   "store": {
     "title": "Mi Tienda",
     "loading": "Cargando productos...",
-    "noProducts": "No hay productos disponibles"
+    "noProducts": "No hay productos disponibles",
+    "searchPlaceholder": "Buscar productos..."
   },
   "categories": {
     "all": "Todo",

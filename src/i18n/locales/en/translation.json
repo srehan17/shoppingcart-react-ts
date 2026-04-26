@@ -22,7 +22,8 @@
   "store": {
     "title": "My Store",
     "loading": "Loading products...",
-    "noProducts": "No products available"
+    "noProducts": "No products available",
+    "searchPlaceholder": "Search products..."
   },
   "categories": {
     "all": "All",
