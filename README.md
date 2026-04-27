@@ -72,6 +72,14 @@ Components resolve the active locale at render time, falling back to `en`:
 item.title[i18n.language] ?? item.title.en
 ```
 
+> **Scaling to a live API:** The translations in `data.json` were written manually. If you switch to a live product API (e.g. FakeStore), you can automate this with a one-time build script:
+> 1. Fetch products from the API
+> 2. Pass each `title` and `description` through a translation service (DeepL, Google Translate, or the Claude API)
+> 3. Write the result back to `data.json` in the same `{ en, fr, es }` structure
+> 4. Re-run the script whenever the product catalogue changes
+>
+> The rest of the app (components, context, locale resolution) requires no changes — it already reads from the nested structure at runtime.
+
 **3. Currency formatting** — uses the browser's built-in `Intl.NumberFormat`, passing the active locale so numbers render correctly per region (e.g. `$55.99` in English, `55,99 $US` in French):
 
 ```ts
