@@ -21,7 +21,7 @@ const ShoppingCart = ({ isOpen }: ShoppingCartProps) => {
     <Offcanvas show={isOpen} placement="end" onHide={closeCart}>
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>
-          {t("cart.title")}{cartQuantity > 0 ? ` (${t("cart.itemCount", { count: cartQuantity })})` : ""}
+          {t("cart.title")} ({t("cart.itemCount", { count: cartQuantity })})
         </Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body className="d-flex flex-column">
