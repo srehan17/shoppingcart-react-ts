@@ -114,6 +114,9 @@ Tests cover core cart interactions, store filtering, and persistence using Vites
 - Category filter shows only matching products
 - Sort by price (low→high and high→low)
 - Cart restored from localStorage on remount
+- Language switching (French and Spanish update nav and product titles)
+- Cart item count plural rules (0 items / 1 item / 2 items)
+- French singular form for 1 item (1 article)
 
 ```bash
 npm run test
